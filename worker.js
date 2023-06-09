@@ -57,20 +57,20 @@ table td:last-child {
 <h1>My Ip Info</h1>
 <table>
 <tr><td>IP</td><td>${request.headers.get("X-Real-IP")}</td></tr>
-<tr><td>城市</td><td>${request.cf.city}</td></tr>
-<tr><td>国家/地区</td><td>${request.cf.country}</td></tr>
+<tr><td>CITY</td><td>${request.cf.city}</td></tr>
+<tr><td>COUNTRY/REGION</td><td>${request.cf.country}</td></tr>
 <tr><td>ASN</td><td>${request.cf.asn}</td></tr>
-<tr><td>ASN组织</td><td>${request.cf.asOrganization}</td></tr>
-<tr><td>数据中心代码</td><td>${request.cf.colo}</td></tr>
+<tr><td>ASN ORGANIZATION</td><td>${request.cf.asOrganization}</td></tr>
+<tr><td>DATA CENTER CODE</td><td>${request.cf.colo}</td></tr>
 
 
 <tr><td>HTTP</td><td>${request.cf.httpProtocol}</td></tr>
-<tr><td>经度</td><td>${request.cf.longitude}</td></tr>
-<tr><td>纬度</td><td>${request.cf.latitude}</td></tr>
-<tr><td>邮编</td><td>${request.cf.postalCode}</td></tr>
-<tr><td>机器人指数</td><td>${request.cf.botManagement.score}</td></tr>
-<tr><td>友好机器人</td><td>${request.cf.botManagement.verifiedBot}</td></tr>
-<tr><td>时区</td><td>${request.cf.timezone}</td></tr>
+<tr><td>LONGITUDE</td><td>${request.cf.longitude}</td></tr>
+<tr><td>LATITUDE</td><td>${request.cf.latitude}</td></tr>
+<tr><td>POSTAL CODE</td><td>${request.cf.postalCode}</td></tr>
+<tr><td>BOT SCORE</td><td>${request.cf.botManagement.score}</td></tr>
+<tr><td>VERIFIED BOT</td><td>${request.cf.botManagement.verifiedBot}</td></tr>
+<tr><td>TIME ZONE</td><td>${request.cf.timezone}</td></tr>
 <tr><td>UA</td><td>${request.headers.get("User-Agent")}</td></tr>
 </table>
 </div>

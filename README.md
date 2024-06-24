@@ -7,16 +7,12 @@ Shows your ip address related information.
 
 Original code is not working anymore. 
 
-here is the new code
+here is the new code: 
 
 addEventListener('fetch', event => {
  event.respondWith(handleRequest(event.request))
 })
  
-/**
-* Respond to the request
-* @param {Request} request
-*/
 async function handleRequest(e) {
  
    let a = '';
